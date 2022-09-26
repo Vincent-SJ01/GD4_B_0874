@@ -31,7 +31,7 @@ include '../component/sidebar.php'?>
                           </div>
 
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="formlabel">Realese</label>
+                              <label for="exampleInputEmail1" class="formlabel">Release</label>
                               <input class="form-control" id="realese" name="realese" aria-describedby="emailHelp">
 
                           </div>
@@ -47,7 +47,7 @@ include '../component/sidebar.php'?>
                           </div>
 
                           <div class="d-grid gap-2">
-                              <button type="submit" class="btn btn-primary" name="addMovie">Register</button>
+                              <button type="submit" class="btn btn-primary" name="addMovie">Tambah Movie</button>
                           </div>
 
                       </form>
