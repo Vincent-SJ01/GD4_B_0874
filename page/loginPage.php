@@ -16,7 +16,6 @@
             <nav class="navbar navbar-dark bg-dark fixed-top">
 
                 <div class="container">
-                    <!-- Nama : nama panggilan kalian -->
                     <a class="navbar-brand fw-bold" href="/GD4_B_0874">PHP - Vincent</a>
                 </div>
 

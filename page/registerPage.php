@@ -30,22 +30,20 @@
                         <div class="card-header fw-bold">Register</div>
                         <div class="card-body">
 
-                            <form action="../process/registerProcess.php" method="post" novalidate>
+                            <form action="../process/registerProcess.php" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Name</label>
-                                    <input class="form-control" id="name" name="name" aria-describedby="emailHelp">
+                                    <input class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Phone Number</label>
-                                    <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp">
-
-
+                                    <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp" pattern="^(08)([0-9]{8,10})$" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Job</label>
-                                    <select class="form-select" aria-label="Default select example" name="job" id="job">
+                                    <select class="form-select" aria-label="Default select example" name="job" id="job" required>
 
                                         <option value="Student">Student</option>
                                         <option value="Lecturer">Lecturer</option>
@@ -56,7 +54,7 @@
 
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Membership</label>
-                                    <select class="form-select" aria-label="Default select example" name="membership" id="membership">
+                                    <select class="form-select" aria-label="Default select example" name="membership" id="membership" required>
 
                                         <option value="Reguler">Reguler</option>
                                         <option value="Platinum">Platinum</option>
@@ -67,12 +65,12 @@
 
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Email</label>
-                                    <input class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                    <input class="form-control" id="email" name="email" aria-describedby="emailHelp" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="formlabel">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password">
+                                    <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
 
                                 <div class="d-grid gap-2">

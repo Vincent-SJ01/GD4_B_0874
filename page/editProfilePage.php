@@ -11,28 +11,29 @@ $user = $_SESSION['user'];
         </div>
 
         <hr>
-        <form class="row g-3 needs-validation" action='../process/editProcess.php' method="post" >
+        <form class="row g-3" action='../process/editProcess.php' method="post" >
 
             <div class="col-12">
                 <label class="form-label">Name</label>
-                <input type="text" class="form-control" placeholder="Saja" value=<?php echo $user['name']?> name="name">
-
+                <input type="text" class="form-control" placeholder="Saja" value=<?php echo $user['name']?> name="name" required>
             </div>
 
             <div class="col-12">
                 <label class="form-label">Phone Number</label>
-                <input type="text" class="form-control" placeholder="0812xxxxxxxx" value=<?php echo $user['phonenum']?> name="phonenum">
+                <input type="text" class="form-control" placeholder="0812xxxxxxxx" value=<?php echo $user['phonenum']?> name="phonenum" pattern="^(08)([0-9]{8,10})$" required>
+                <small id="emailHelp" class="form-text text-muted">example: 08124734xxxx</small>
 
             </div>
 
             <div class="col-12">
                 <label class="form-label">Email</label>
-                <input type="text" class="form-control" placeholder="example@google.com" value=<?php echo $user['email']?> name="email">
+                <input type="text" class="form-control" placeholder="example@google.com" value=<?php echo $user['email']?> name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                <small id="emailHelp" class="form-text text-muted">example: example@gmail.com</small>
             </div>
 
             <div class="col-12">
                 <label for="exampleInputEmail1" class="formlabel">Job</label>
-                <select class="form-select" aria-label="Default select example" name="job">
+                <select class="form-select" aria-label="Default select example" name="job" required>
 
 
                     <option value="Student"

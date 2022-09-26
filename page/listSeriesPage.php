@@ -24,39 +24,40 @@ include '../component/sidebar.php'?>
                       <form action="../process/addEditSeriesProcess.php" method="post">
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel">Name</label>
-                              <input class="form-control" id="name" name="name" aria-describedby="emailHelp">
+                              <input class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
                           </div>
 
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel">Genre</label>
-                              <input class="form-control" id="genreView" name="genreView" aria-describedby="emailHelp">
-                              <select class="form-select" multiple aria-label="multiple Disabled select example" name="genre[]" id="inputGenre">
+                              <input class="form-control" id="genreView" name="genreView" aria-describedby="emailHelp" disabled>
+                              <select class="form-select" multiple aria-label="multiple Disabled select example" name="genre[]" id="inputGenre" required>
                                   <option value="Comedy">Comedy</option>
                                   <option value="Action">Action</option>
                                   <option value="Horror">Horror</option>
                               </select>
+                              <small id="emailHelp" class="form-text text-muted">Silahkan Pilih Minimal 1</small>
                           </div>
 
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel">Release</label>
-                              <input class="form-control" id="realease" name="realease" aria-describedby="emailHelp">
+                              <input class="form-control" id="realease" name="realease" aria-describedby="emailHelp" pattern="^[0-9]{4}$" required>
+                              <small id="emailHelp" class="form-text text-muted">example: 2002</small>
 
                           </div>
 
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel">Episode</label>
-                              <input class="form-control" id="episode" name="episode" aria-describedby="emailHelp">
-
+                              <input class="form-control" id="episode" name="episode" aria-describedby="emailHelp" pattern="^[0-9]$" required>
                           </div>
 
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel">Season</label>
-                              <input class="form-control" id="season" name="season" aria-describedby="emailHelp">
+                              <input class="form-control" id="season" name="season" aria-describedby="emailHelp" pattern="^[0-9]$" required>
                           </div>
 
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel">Synopsis</label>
-                              <input class="form-control" id="synopsis" name="synopsis" aria-describedby="emailHelp">
+                              <input class="form-control" id="synopsis" name="synopsis" aria-describedby="emailHelp" required>
                           </div>
 
                           <div class="d-grid gap-2">
