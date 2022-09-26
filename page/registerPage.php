@@ -39,6 +39,7 @@
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Phone Number</label>
                                     <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp" pattern="^(08)([0-9]{8,10})$" required>
+                                    <small id="emailHelp" class="form-text text-muted">example: 08124734xxxx</small>
                                 </div>
 
                                 <div class="mb-3">
@@ -66,6 +67,7 @@
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Email</label>
                                     <input class="form-control" id="email" name="email" aria-describedby="emailHelp" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                                    <small id="emailHelp" class="form-text text-muted">example: example@gmail.com</small>
                                 </div>
 
                                 <div class="mb-3">
