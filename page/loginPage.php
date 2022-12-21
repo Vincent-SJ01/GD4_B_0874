@@ -26,7 +26,7 @@
                     <div class="card text-white bg-dark ma-5 shadow" style="min-width:25rem;">
                         <div class="card-header fw-bold">Login</div>
                         <div class="card-body">
-                            <form action="../process/loginProcess.php" method="post">
+                            <form action="" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="formlabel">Email</label>
                                     <input class="form-control" id="email" name="email" aria-describedby="emailHelp">

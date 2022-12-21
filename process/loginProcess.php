@@ -1,4 +1,8 @@
+
 <?php
+
+
+
     if(isset($_POST['login'])){
         include('../db.php');
 
@@ -8,7 +12,10 @@
         $query = mysqli_query($con, "SELECT * FROM users WHERE email = '$email'") or die(mysqli_error($con));
 
         if(mysqli_num_rows($query) == 0){
-            echo '<script> alert("Email not found!"); window.location = "../page/loginPage.php" </script>';
+            echo '<script> alert("Email not found!");
+                console.log("HELLO");
+
+            </script>';
 
         }else{
             $user = mysqli_fetch_assoc($query);
